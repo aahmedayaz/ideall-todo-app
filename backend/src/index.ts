@@ -1,24 +1,22 @@
 require('dotenv').config();
 import express, { Application } from 'express';
 import connectToDB from './db/index';
+import taskRoutes from './routes/task.routes';
 
-// env
+const app: Application = express();
+
+app.use(express.json());
+app.use('/api/tasks', taskRoutes);
+
 const uri = process.env.MONGO_URI as string;
 const port = process.env.PORT || 5000;
 
-// Express App
-const app: Application = express();
-
-// Middleware
-app.use(express.json());
-
-// Server Function
+// Server 
 const server = async () => {
   try {
     // Connecting to MongoDB Database - if connects only then go to next step, otherwise exit
     await connectToDB(uri);
     
-    // Listening Server
     app.listen(port, (err?: Error) => {
       if (err) {
         console.log('Listening Error:', err);
