@@ -2,6 +2,11 @@
 
 This is a full-stack ToDo web application built with the MERN stack, Next.js, and TypeScript. The application allows users to create, read, update, and delete tasks, view task details, and reorder tasks using drag-and-drop functionality.
 
+<img width="960" alt="Homepage" src="https://github.com/user-attachments/assets/99bc4f7c-f604-4b3e-81c5-d55f542bc7c0">
+<img width="960" alt="Todo App" src="https://github.com/user-attachments/assets/718f894c-fceb-45dc-939c-88609b45dc11">
+
+
+
 ## Table of Contents
 
 - [Technologies Used](#technologies-used)
