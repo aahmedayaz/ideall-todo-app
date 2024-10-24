@@ -6,11 +6,11 @@ This is a full-stack ToDo web application built with the MERN stack, Next.js, an
 
 - [Technologies Used](#technologies-used)
 - [Setup Instructions](#setup-instructions)
-  - [Frontend Setup](#frontend-setup)
   - [Backend Setup](#backend-setup)
+  - [Frontend Setup](#frontend-setup)
 - [Running the Application](#running-the-application)
-- [Usage](#usage)
-- [License](#license)
+- [Frontend Routes](#frontend-routes)
+- [Backend Routes](#backend-routes)
 
 ## Technologies Used
 
@@ -30,31 +30,19 @@ This is a full-stack ToDo web application built with the MERN stack, Next.js, an
 
 ## Setup Instructions
 
-### Frontend Setup
-
-1. **Navigate to the frontend directory:**
-   ```bash
-   cd E:\GitHub\Ayaz Github\ideall-todo-app\frontend
-   ```
-
-2. **Install the required packages:**
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
 
 ### Backend Setup
 
 1. **Navigate to the backend directory:**
    ```bash
-   cd E:\GitHub\Ayaz Github\ideall-todo-app\backend
+   cd \ideall-todo-app\backend
    ```
 
-2. **Create a `.env` file** in the backend directory with the following content:
+
+$${\color{red}🔴 I  \space haven't  \space mentioned  \space my  \space .env  \space file  \space in  \space the  \space gitignore}$$
+
+
+2. **Use my .env file, or if you want to use your file, then delete the existing .env file from the backend directory & Create a new `.env` file** in the backend directory with your own MONGODB_URI and PORT:
    ```env
    MONGODB_URI=mongodb://<username>:<password>@localhost:27017/yourdbname
    PORT=5000
@@ -72,9 +60,28 @@ This is a full-stack ToDo web application built with the MERN stack, Next.js, an
    npm run start
    ```
 
+
+
+### Frontend Setup
+
+1. **Navigate to the frontend directory:**
+   ```bash
+   \ideall-todo-app\frontend
+   ```
+
+2. **Install the required packages:**
+   ```bash
+   npm install --force
+   ```
+
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
 ## Running the Application
 
-After setting up both the frontend and backend, the application will be accessible in your web browser at:
+After setting up both the frontend and backend, the frontend of your application will be accessible in your web browser at:
 ```
 http://localhost:3000
 ```
@@ -83,13 +90,13 @@ The backend API will be running at:
 http://localhost:5000
 ```
 
-## Usage
+## Frontend Routes
+  - http://localhost:3000 ( Homepage )
+  - http://localhost:3000/tasks ( It contains the Todo App )
 
-- Users can create new tasks by entering a title and description.
-- Users can view task details by clicking on any task in the list.
-- Tasks can be marked as complete using the checkbox.
-- Users can delete tasks and reorder them using drag-and-drop functionality.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## Backend Routes
+  - GET: http://localhost:5000/api/tasks ( Get all Tasks )
+  - GET: http://localhost:5000/api/tasks/{here add task id} ( Get a single task )
+  - POST: http://localhost:5000/api/tasks ( Add a task )
+  - DELETE: http://localhost:5000/api/tasks/{here add task id} ( Delete a single task )
+  - PUT: http://localhost:5000/api/tasks/{here add task id} ( update a single task )
