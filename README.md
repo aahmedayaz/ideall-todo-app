@@ -19,22 +19,16 @@ This is a full-stack ToDo web application built with the MERN stack, Next.js, an
 
 ## Technologies Used
 
-- **Frontend:**
-  - Next.js
-  - React
-  - Redux Toolkit
-  - Axios
-  - Material-UI
-
-- **Backend:**
-  - Node.js
-  - Express
-  - TypeScript
-  - Mongoose
-  - MongoDB
+  - **Frontend:** Next.js, TypeScript, Redux Toolkit, Axios, Material UI
+  - **Backend:** Node.js, Express, TypeScript, Mongoose
+  - **Database:** MongoDB
 
 ## Setup Instructions
 
+1. **Clone the repository:**
+  ```bash
+  git clone https://github.com/aahmedayaz/ideall-todo-app.git
+  ```
 
 ### Backend Setup
 
