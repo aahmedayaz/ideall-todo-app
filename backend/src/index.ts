@@ -2,9 +2,11 @@ require('dotenv').config();
 import express, { Application } from 'express';
 import connectToDB from './db/index';
 import taskRoutes from './routes/task.routes';
+import cors from 'cors';
 
 const app: Application = express();
 
+app.use(cors());
 app.use(express.json());
 app.use('/api/tasks', taskRoutes);
 

@@ -15,8 +15,8 @@ export const getAllTasks = asyncHandler(async (req: Request, res: Response) => {
 // Create a new task
 export const createNewTask = asyncHandler(
   async (req: Request, res: Response) => {
-    const { title, description } = req.body;
-    const newTask = new Task({ title, description });
+    const { title, description, isCompleted } = req.body;
+    const newTask = new Task({ title, description, isCompleted });
     const savedTask = await newTask.save();
     res
       .status(201)

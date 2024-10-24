@@ -18,7 +18,7 @@ const TaskSchema: Schema = new Schema(
     },
     isCompleted: {
       type: Boolean,
-      default: false,
+      required: [true, 'Task IsCompleted is required'],
     },
   },
   {
