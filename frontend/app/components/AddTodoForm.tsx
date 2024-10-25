@@ -44,13 +44,13 @@ const AddTodoForm = () => {
         InputLabelProps={{
           style: {
             color: "white",
-            fontSize: "0.8rem", // Adjust label font size
+            fontSize: "0.8rem", 
           },
         }}
         InputProps={{
           style: {
             color: "white",
-            fontSize: "0.8rem", // Adjust input font size
+            fontSize: "0.8rem",
           },
         }}
       />
@@ -65,13 +65,13 @@ const AddTodoForm = () => {
         InputLabelProps={{
           style: {
             color: "white",
-            fontSize: "0.8rem", // Adjust label font size
+            fontSize: "0.8rem", 
           },
         }}
         InputProps={{
           style: {
             color: "white",
-            fontSize: "0.8rem", // Adjust input font size
+            fontSize: "0.8rem",
           },
         }}
       />

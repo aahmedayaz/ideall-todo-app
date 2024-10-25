@@ -70,15 +70,14 @@ const TodoItem = ({ todo, index, moveTodo }: TodoItemProps) => {
     }),
   });
 
-  // Combine refs using the 'drag' and 'ref' functions
   drag(drop(ref));
 
   return (
     <ListItem
-      ref={ref} // Use the combined ref
+      ref={ref}
       className="flex justify-between items-center px-4 rounded-lg shadow-md border border-gray-600 h-[50px]"
       style={{
-        cursor: isDragging ? "grabbing" : "grab", // Changes cursor while dragging
+        cursor: isDragging ? "grabbing" : "grab",
       }}
       key={index}
     >
