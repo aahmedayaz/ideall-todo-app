@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <div className={`flex flex-col h-[100vh] items-center w-[100%] justify-center gap-16 z-20`}>
       <main className={styles.main}>
@@ -61,3 +61,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home

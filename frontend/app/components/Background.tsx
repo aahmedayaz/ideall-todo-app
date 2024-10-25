@@ -8,14 +8,14 @@ const Background = () => {
         alt="a"
         width={1000}
         height={1000}
-        className="rotate-[75deg] translate-x-[-700px]"
+        className="rotate-[75deg] translate-x-[-730px]"
       />
       <Image
         src="/media1.png"
         alt="a"
         width={1000}
         height={1000}
-        className="rotate-[75deg] translate-x-[1400px] absolute top-0"
+        className="rotate-[75deg] translate-x-[1060px] absolute top-0"
       />
     </div>
   );
